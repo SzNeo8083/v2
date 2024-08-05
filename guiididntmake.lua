@@ -1,4 +1,5 @@
 local startupArgs = ({...})[1] or {}
+local UserInputService = game:GetService("UserInputService")
 
 if getgenv().library ~= nil then
     getgenv().library:Unload();
