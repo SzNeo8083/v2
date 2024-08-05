@@ -4745,7 +4745,7 @@ function library:CreateSettingsTab(menu)
 
     mainSection:AddButton({text = 'Join Discord', flag = 'joindiscord', confirm = true, callback = function()
         local res = syn.request({
-            Url = 'https://discord.gg/rkRW5VrbWu',
+            Url = 'https://discord.com/invite/silentware',
             Method = 'POST',
             Headers = {
                 ['Content-Type'] = 'application/json',
@@ -4754,7 +4754,7 @@ function library:CreateSettingsTab(menu)
             Body = game:GetService('HttpService'):JSONEncode({
                 cmd = 'INVITE_BROWSER',
                 nonce = game:GetService('HttpService'):GenerateGUID(false),
-                args = {code = 'rkRW5VrbWu'}
+                args = {code = 'silentware'}
             })
         })
         if res.Success then
